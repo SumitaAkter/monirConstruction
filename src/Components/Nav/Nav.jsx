@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../../assets/logo.jpeg';
 
 const Nav = () => {
   const [cartCount, setCartCount] = useState(0);
@@ -39,7 +40,7 @@ const Nav = () => {
         {/* Logo */}
         <div to="/" className="flex mt-2 mb-2 items-center gap-2">
           <img
-            src="/../src/assets/logo.jpeg"
+            src={logo}
             alt="Logo"
             className="h-9 w-9 object-contain rounded-xl shadow-sm"
           />
