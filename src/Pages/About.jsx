@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-import about from '../assets/about.webp';
+import about from '../assets/About.webp';
 import about1 from '../assets/about1.jpeg';
 import about2 from '../assets/about2.jpeg';
 import about3 from '../assets/about3.jpeg';
