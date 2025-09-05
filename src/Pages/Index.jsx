@@ -90,7 +90,10 @@ const Index = () => {
                                     We deliver high-quality residential, commercial, and industrial construction services with precision, efficiency, and safety.
                                 </p>
                                 <div className="mt-auto">
-                                    <a href="/get-quote" className='px-6 py-3 bg-[#ff823a] rounded-lg font-semibold hover:bg-[#e5722c] transition'>
+                                    <a
+                                        href="/contact#message-section"
+                                        className='px-6 py-3 bg-[#ff823a] rounded-lg font-semibold hover:bg-[#e5722c] transition'
+                                    >
                                         Get a Quote
                                     </a>
                                 </div>
@@ -141,70 +144,74 @@ const Index = () => {
 
             {/** Products */}
             <div className="products-container px-[8%] lg:px-[12%] py-[50px] my-12">
-                <div className="relative">
-                    <div className="row">
-                        <div className="section-title mb-12 product-title text-center">
-                            <h2 className='font-semibold text-3xl'>Our Latest Projects</h2>
-                            <p className="text-gray-500">Get The Trending Buildings Design</p>
-                        </div>
-                    </div>
-                    <Swiper
-                        slidesPerView={4}
-                        spaceBetween={20}
-                        modules={[Navigation]}
-                        navigation={{ nextEl: ".product-swiper-next", prevEl: ".product-swiper-prev" }}
-                        breakpoints={{
-                            1399: { slidesPerView: 4 },
-                            1199: { slidesPerView: 3 },
-                            991: { slidesPerView: 2 },
-                            767: { slidesPerView: 1.5 },
-                            0: { slidesPerView: 1 },
-                        }}
-                        className='mt-4 swiper relative'
-                    >
-                        {products.filter(product => product.id >= 1 && product.id <= 8).map(product => (
-                            <SwiperSlide key={product.id}>
-                                <div className="product-item text-center relative">
-                                    <Link to={`/product/${product.id}`} className='no-underline text-black'>
-                                        <div className="product-image w-full relative overflow-hidden rounded-lg">
-                                            <img
-                                                src={product.image}
-                                                alt="product"
-                                                className="w-full h-[250px] lg:h-[300px] object-cover transition-transform duration-300"
-                                            />
-                                            <img
-                                                src={product.secondImage}
-                                                alt="product"
-                                                className="w-full h-[250px] lg:h-[300px] object-cover absolute top-0 left-0 opacity-0 hover:opacity-100 transition duration-300"
-                                            />
-                                            <div className="product-icons gap-3 flex justify-center items-center absolute inset-0 opacity-0 hover:opacity-100 transition duration-300">
-                                                <div className="product-icon cursor-pointer" title='Add to Wishlist' onClick={(e) => { e.preventDefault(); addToWishlist(product); }}>
-                                                    <i className='bi bi-heart text-lg'></i>
-                                                </div>
-
-                                            </div>
-                                            {product.tag && (
-                                                <span className={`badge text-white absolute top-2 left-2 text-xs px-2 py-1 rounded ${product.tag === 'Sale' ? 'bg-red-600' : 'bg-green-600'}`}>
-                                                    {product.tag}
-                                                </span>
-                                            )}
-                                        </div>
-                                    </Link>
-                                    <div className="product-content pt-2">
-                                        <span className='price no-underline'>
-                                            {product.price}
-                                        </span>
-                                        <h3 className='title'>
-                                            {product.productname}
-                                        </h3>
+    <div className="relative">
+        <div className="row">
+            <div className="section-title mb-12 product-title text-center">
+                <h2 className='font-semibold text-3xl'>Our Latest Projects</h2>
+                <p className="text-gray-500">Get The Trending Buildings Design</p>
+            </div>
+        </div>
+        <Swiper
+            slidesPerView={4}
+            spaceBetween={20}
+            modules={[Navigation]}
+            navigation={{ nextEl: ".product-swiper-next", prevEl: ".product-swiper-prev" }}
+            breakpoints={{
+                1399: { slidesPerView: 4 },
+                1199: { slidesPerView: 3 },
+                991: { slidesPerView: 2 },
+                767: { slidesPerView: 1.5 },
+                0: { slidesPerView: 1 },
+            }}
+            className='mt-4 swiper relative'
+        >
+            {products.filter(product => product.id >= 1 && product.id <= 8).map(product => (
+                <SwiperSlide key={product.id}>
+                    <div className="product-item text-center relative">
+                        <Link 
+                            to={`/product/${product.id}`} 
+                            className='no-underline text-black'
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                        >
+                            <div className="product-image w-full relative overflow-hidden rounded-lg">
+                                <img
+                                    src={product.image}
+                                    alt="product"
+                                    className="w-full h-[250px] lg:h-[300px] object-cover transition-transform duration-300"
+                                />
+                                <img
+                                    src={product.secondImage}
+                                    alt="product"
+                                    className="w-full h-[250px] lg:h-[300px] object-cover absolute top-0 left-0 opacity-0 hover:opacity-100 transition duration-300"
+                                />
+                                <div className="product-icons gap-3 flex justify-center items-center absolute inset-0 opacity-0 hover:opacity-100 transition duration-300">
+                                    <div className="product-icon cursor-pointer" title='Add to Wishlist' onClick={(e) => { e.preventDefault(); addToWishlist(product); }}>
+                                        <i className='bi bi-heart text-lg'></i>
                                     </div>
                                 </div>
-                            </SwiperSlide>
-                        ))}
+                                {product.tag && (
+                                    <span className={`badge text-white absolute top-2 left-2 text-xs px-2 py-1 rounded ${product.tag === 'Sale' ? 'bg-red-600' : 'bg-green-600'}`}>
+                                        {product.tag}
+                                    </span>
+                                )}
+                            </div>
+                        </Link>
+                        <div className="product-content pt-2">
+                            <span className='price no-underline'>
+                                {product.price}
+                            </span>
+                            <h3 className='title'>
+                                {product.productname}
+                            </h3>
+                        </div>
+                    </div>
+                </SwiperSlide>
+            ))}
 
-                    </Swiper>
-                </div>
-            </div>
+        </Swiper>
+    </div>
+</div>
+
 
             {/** Services */}
             <div className='px-[8%] lg:px-[12%] pb-[50px] py-10'>
@@ -447,72 +454,72 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-{/** Flate */}
-<div className="products-container px-[8%] lg:px-[12%] py-[20px] my-1">
-  <div className="relative">
-    <div className="row">
-      <div className="section-title mb-12 product-title text-center">
-        <h2 className='font-semibold text-3xl'>Ready Flats to Sale</h2>
-        <p className="text-gray-500">Get The Trending Dream Flat</p>
-      </div>
-    </div>
+            {/** Flate */}
+            <div className="products-container px-[8%] lg:px-[12%] py-[20px] my-1">
+                <div className="relative">
+                    <div className="row">
+                        <div className="section-title mb-12 product-title text-center">
+                            <h2 className='font-semibold text-3xl'>Ready Flats to Sale</h2>
+                            <p className="text-gray-500">Get The Trending Dream Flat</p>
+                        </div>
+                    </div>
 
-    <Swiper
-      slidesPerView={4}
-      spaceBetween={20}
-      modules={[Navigation, Autoplay]}
-      navigation={{ nextEl: ".flats-swiper-next", prevEl: ".flats-swiper-prev" }}
-      autoplay={{ delay: 1000, disableOnInteraction: false }}
-      loop={true}
-      breakpoints={{
-        1399: { slidesPerView: 4 },
-        1199: { slidesPerView: 3 },
-        991: { slidesPerView: 2 },
-        767: { slidesPerView: 1.5 },
-        0: { slidesPerView: 1 },
-      }}
-      className='mt-4 swiper relative'
-    >
-      {flatsData.flats.filter(flat => flat.id >= 1 && flat.id <= 8).map(flat => (
-        <SwiperSlide key={flat.id}>
-          <div className="product-item text-center relative">
-            <Link to={`/product/${flat.id}`} className='no-underline text-black'>
-              <div className="product-image w-full relative overflow-hidden rounded-lg">
-                <img 
-                  src={flat.images[0]} 
-                  alt={flat.title} 
-                  className="w-full h-[250px] sm:h-[280px] md:h-[300px] lg:h-[320px] xl:h-[350px] object-cover transition-transform duration-300 hover:scale-105"
-                />
+                    <Swiper
+                        slidesPerView={4}
+                        spaceBetween={20}
+                        modules={[Navigation, Autoplay]}
+                        navigation={{ nextEl: ".flats-swiper-next", prevEl: ".flats-swiper-prev" }}
+                        autoplay={{ delay: 1000, disableOnInteraction: false }}
+                        loop={true}
+                        breakpoints={{
+                            1399: { slidesPerView: 4 },
+                            1199: { slidesPerView: 3 },
+                            991: { slidesPerView: 2 },
+                            767: { slidesPerView: 1.5 },
+                            0: { slidesPerView: 1 },
+                        }}
+                        className='mt-4 swiper relative'
+                    >
+                        {flatsData.flats.filter(flat => flat.id >= 1 && flat.id <= 8).map(flat => (
+                            <SwiperSlide key={flat.id}>
+                                <div className="product-item text-center relative">
+                                    <Link to={`/product/${flat.id}`} className='no-underline text-black'>
+                                        <div className="product-image w-full relative overflow-hidden rounded-lg">
+                                            <img
+                                                src={flat.images[0]}
+                                                alt={flat.title}
+                                                className="w-full h-[250px] sm:h-[280px] md:h-[300px] lg:h-[320px] xl:h-[350px] object-cover transition-transform duration-300 hover:scale-105"
+                                            />
 
-                {flat.status && (
-                  <span className={`badge text-white absolute top-2 left-2 text-xs px-2 py-1 rounded ${flat.status === 'Available' ? 'bg-green-600' : 'bg-red-600'}`}>
-                    {flat.status}
-                  </span>
-                )}
-              </div>
-            </Link>
-            <div className="product-content pt-2">
-              <span className='price no-underline'>
-                {flat.price}
-              </span>
-              <h3 className='title'>
-                {flat.title}
-              </h3>
+                                            {flat.status && (
+                                                <span className={`badge text-white absolute top-2 left-2 text-xs px-2 py-1 rounded ${flat.status === 'Available' ? 'bg-green-600' : 'bg-red-600'}`}>
+                                                    {flat.status}
+                                                </span>
+                                            )}
+                                        </div>
+                                    </Link>
+                                    <div className="product-content pt-2">
+                                        <span className='price no-underline'>
+                                            {flat.price}
+                                        </span>
+                                        <h3 className='title'>
+                                            {flat.title}
+                                        </h3>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+
+                    {/* Navigation buttons */}
+                    <div className="flats-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
+                        &#10094;
+                    </div>
+                    <div className="flats-swiper-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
+                        &#10095;
+                    </div>
+                </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-
-    {/* Navigation buttons */}
-    <div className="flats-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
-      &#10094;
-    </div>
-    <div className="flats-swiper-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
-      &#10095;
-    </div>
-  </div>
-</div>
 
         </>
     );

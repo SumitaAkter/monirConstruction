@@ -36,8 +36,8 @@ expert tips for building safe, modern, and durable spaces.
                             <i className='ri-phone-line text-3xl icon mb-2'></i>
                             <h5 className='text-2xl font-semibold mb-1 font-bricolage'>Contact</h5>
                             <p className='text-gray-400'><strong className='text-black'>Mobile:</strong> +88 01814-266412</p>
-                            <p className='text-gray-400'><strong className='text-black'>Phone:</strong> +880 1358993399</p>
                             <p className='text-gray-400'><strong className='text-black'>Email:</strong> ceo@monirconstruction.com</p>
+                            <p className='text-gray-400'><strong className='text-black'>Email:</strong> moniruzzaman.civil2018@gmail.com</p>
                         </div>
 
                         <div className="contact-box text-left p-4 shadow-md hover:shadow-lg rounded transition-shadow duration-300">
@@ -63,7 +63,7 @@ expert tips for building safe, modern, and durable spaces.
                 </section>
 
                 {/** Contact Form */}
-                <div className="message-section text-center mt-6 px-4">
+                <div id='message-section' className="text-center mt-6 px-4">
                     <h2 className='form-title text-3xl font-bold text-center mb-8 font-bricolgae'>Send Your Message</h2>
                     <form className='contact-form max-w-4xl mx-auto' onSubmit={handleSendMessage}>
                         <div className="row grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">

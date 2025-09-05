@@ -20,7 +20,12 @@
     ],
     "location": "Dhanbari, Tangail Dhaka",
     "type": "Residential",
-    "status": "In Progress"
+    "status": "In Progress",
+    "totalLand": "10 Katha",
+    "totalFlats": "20 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,200 sq.ft",
+    "totalParking": "15 Parking Spaces"
   },
   {
     "id": 2,
@@ -43,7 +48,12 @@
     ],
     "location": "Barishal, Bangladesh",
     "type": "Religious Building",
-    "status": "In Progress"
+    "status": "In Progress",
+    "totalLand": "25 Katha",
+    "totalFlats": "12 Flats",
+    "unitsPerFlat": "3 Units",
+    "flatSize": "1,400 sq.ft",
+    "totalParking": "20 Parking Spaces"
   },
   {
     "id": 3,
@@ -66,7 +76,12 @@
     ],
     "location": "Manikdi, Cantonment, Mirpur-Dhaka",
     "type": "Industrial",
-    "status": "Planned"
+    "status": "Planned",
+    "totalLand": "1.5 Bigha",
+    "totalFlats": "8 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,600 sq.ft",
+    "totalParking": "25 Parking Spaces"
   },
   {
     "id": 4,
@@ -89,7 +104,12 @@
     ],
     "location": "Shakfuta-Housing, Mirpur-12, Dhaka",
     "type": "Infrastructure",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "18 Katha",
+    "totalFlats": "16 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,050 sq.ft",
+    "totalParking": "12 Parking Spaces"
   },
   {
     "id": 5,
@@ -112,7 +132,12 @@
     ],
     "location": "Baigertek Haji Market, Mirpur Cantonment, Dhaka",
     "type": "Infrastructure",
-    "status": "Completed"
+    "status": "Completed",
+    "totalLand": "30 Katha",
+    "totalFlats": "10 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,500 sq.ft",
+    "totalParking": "22 Parking Spaces"
   },
   {
     "id": 6,
@@ -135,7 +160,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Renovation",
-    "status": "In Progress"
+    "status": "In Progress",
+    "totalLand": "8 Katha",
+    "totalFlats": "6 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "950 sq.ft",
+    "totalParking": "6 Parking Spaces"
   },
   {
     "id": 7,
@@ -158,9 +188,14 @@
     ],
     "location": "Abbasia Madrasha Road, Ainushbag, Dakkhinkhan, Dhaka-1230",
     "type": "Commercial",
-    "status": "Planned"
+    "status": "Planned",
+    "totalLand": "40 Katha",
+    "totalFlats": "45 Flats",
+    "unitsPerFlat": "3 Units",
+    "flatSize": "1,800 sq.ft",
+    "totalParking": "40 Parking Spaces"
   },
-  {
+    {
     "id": 8,
     "image": "/images/product-8.jpeg",
     "secondImage": "/images/product-8.jpeg",
@@ -181,7 +216,12 @@
     ],
     "location": "Abbasia Madrasha Road, Ainushbag, Dakkhinkhan, Dhaka-1230",
     "type": "Recreational",
-    "status": "In Progress"
+    "status": "In Progress",
+    "totalLand": "12 Katha",
+    "totalFlats": "14 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,100 sq.ft",
+    "totalParking": "10 Parking Spaces"
   },
   {
     "id": 9,
@@ -204,7 +244,12 @@
     ],
     "location": "Shakfuta-Housing, Mirpur-12, Dhaka",
     "type": "Landscaping",
-    "status": "Completed"
+    "status": "Completed",
+    "totalLand": "6 Katha",
+    "totalFlats": "5 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "900 sq.ft",
+    "totalParking": "4 Parking Spaces"
   },
   {
     "id": 10,
@@ -227,7 +272,12 @@
     ],
     "location": "DakhshinPara Jame Mashjid Road, Narrdapara, Dakkhinkhan, Dhaka-1230",
     "type": "Industrial",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "20 Katha",
+    "totalFlats": "15 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,350 sq.ft",
+    "totalParking": "18 Parking Spaces"
   },
   {
     "id": 11,
@@ -250,7 +300,12 @@
     ],
     "location": "Shakfuta-Housing, Mirpur-12, Dhaka",
     "type": "Infrastructure",
-    "status": "Planned"
+    "status": "Planned",
+    "totalLand": "15 Katha",
+    "totalFlats": "12 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,200 sq.ft",
+    "totalParking": "14 Parking Spaces"
   },
   {
     "id": 12,
@@ -273,7 +328,12 @@
     ],
     "location": "Chittagong, Bangladesh",
     "type": "Healthcare",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "1 Bigha",
+    "totalFlats": "20 Flats",
+    "unitsPerFlat": "3 Units",
+    "flatSize": "1,750 sq.ft",
+    "totalParking": "30 Parking Spaces"
   },
   {
     "id": 13,
@@ -296,7 +356,12 @@
     ],
     "location": "Sylhet, Bangladesh",
     "type": "Educational",
-    "status": "Completed"
+    "status": "Completed",
+    "totalLand": "28 Katha",
+    "totalFlats": "18 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,400 sq.ft",
+    "totalParking": "20 Parking Spaces"
   },
   {
     "id": 14,
@@ -319,7 +384,12 @@
     ],
     "location": "Khulna, Bangladesh",
     "type": "Commercial",
-    "status": "In Progress"
+    "status": "In Progress",
+    "totalLand": "2 Bigha",
+    "totalFlats": "35 Flats",
+    "unitsPerFlat": "3 Units",
+    "flatSize": "1,650 sq.ft",
+    "totalParking": "60 Parking Spaces"
   },
   {
     "id": 15,
@@ -342,7 +412,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Hospitality",
-    "status": "Planned"
+    "status": "Planned",
+    "totalLand": "3 Bigha",
+    "totalFlats": "50 Flats",
+    "unitsPerFlat": "4 Units",
+    "flatSize": "2,000 sq.ft",
+    "totalParking": "80 Parking Spaces"
   },
   {
     "id": 16,
@@ -365,7 +440,12 @@
     ],
     "location": "Chittagong, Bangladesh",
     "type": "Recreational",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "2.5 Bigha",
+    "totalFlats": "22 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,550 sq.ft",
+    "totalParking": "35 Parking Spaces"
   },
   {
     "id": 17,
@@ -388,7 +468,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "5 Katha",
+    "totalFlats": "6 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "850 sq.ft",
+    "totalParking": "5 Parking Spaces"
   },
   {
     "id": 18,
@@ -411,7 +496,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Completed"
+    "status": "Completed",
+    "totalLand": "4 Katha",
+    "totalFlats": "5 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "780 sq.ft",
+    "totalParking": "3 Parking Spaces"
   },
   {
     "id": 19,
@@ -434,7 +524,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "5 Katha",
+    "totalFlats": "6 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "820 sq.ft",
+    "totalParking": "4 Parking Spaces"
   },
   {
     "id": 20,
@@ -457,7 +552,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "3 Katha",
+    "totalFlats": "4 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "700 sq.ft",
+    "totalParking": "2 Parking Spaces"
   },
   {
     "id": 21,
@@ -480,7 +580,12 @@
     ],
     "location": "Chittagong, Bangladesh",
     "type": "Interior",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "7 Katha",
+    "totalFlats": "8 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,100 sq.ft",
+    "totalParking": "6 Parking Spaces"
   },
   {
     "id": 22,
@@ -503,7 +608,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Completed"
+    "status": "Completed",
+    "totalLand": "4 Katha",
+    "totalFlats": "5 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "760 sq.ft",
+    "totalParking": "3 Parking Spaces"
   },
   {
     "id": 23,
@@ -526,7 +636,12 @@
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Ongoing"
+    "status": "Ongoing",
+    "totalLand": "6 Katha",
+    "totalFlats": "7 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "980 sq.ft",
+    "totalParking": "5 Parking Spaces"
   },
   {
     "id": 24,
@@ -543,58 +658,73 @@
     "dsubdes": [
       "Optimal soundproofing",
       "Comfortable seating",
-      "Ambient lighting",
-      "High-end AV systems",
-      "Modern decor"
+      "Smart lighting setup",
+      "Modern display units",
+      "Durable finishes"
     ],
     "location": "Dhaka, Bangladesh",
     "type": "Interior",
-    "status": "Ongoing"
+    "status": "Planned",
+    "totalLand": "5 Katha",
+    "totalFlats": "6 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "900 sq.ft",
+    "totalParking": "4 Parking Spaces"
   },
   {
     "id": 25,
     "image": "/images/product-25.jpeg",
     "secondImage": "/images/product-25.jpeg",
-    "productname": "Lobby Interior",
-    "price": "৳5,00,000",
+    "productname": "Roof Top Garden",
+    "price": "৳2,50,000",
     "tag": "New",
-    "category": "Interior",
-    "vendor": "Interior Co",
-    "dtitle": "Reception & Lobby Design",
-    "ddes": "Modern lobby and reception interiors to welcome guests in style.",
+    "category": "Exterior",
+    "vendor": "Construction Co",
+    "dtitle": "Green Roof Designs",
+    "ddes": "Eco-friendly rooftop gardens with modern landscaping ideas for homes and offices.",
     "dsubtitle": "Features & Benefits",
     "dsubdes": [
-      "Comfortable seating",
-      "Decorative elements",
-      "Functional layout",
-      "Lighting design",
-      "Durable materials"
+      "Eco-friendly setup",
+      "Durable waterproofing",
+      "Decorative plantation",
+      "Functional relaxation area",
+      "Adds property value"
     ],
-    "location": "Chittagong, Bangladesh",
-    "type": "Interior",
-    "status": "Completed"
+    "location": "Dhaka, Bangladesh",
+    "type": "Exterior",
+    "status": "Completed",
+    "totalLand": "8 Katha",
+    "totalFlats": "9 Flats",
+    "unitsPerFlat": "1 Unit",
+    "flatSize": "1,050 sq.ft",
+    "totalParking": "7 Parking Spaces"
   },
   {
     "id": 26,
     "image": "/images/product-26.jpeg",
     "secondImage": "/images/product-26.jpeg",
-    "productname": "Monir Villa",
-    "price": "৳2,80,000",
+    "productname": "Exterior Facade Design",
+    "price": "৳9,00,000",
     "tag": "Hot",
-    "category": "Interior",
-    "vendor": "Interior Co",
-    "dtitle": "Functional Study Room",
-    "ddes": "Ergonomic and modern study rooms for students and home offices.",
+    "category": "Exterior",
+    "vendor": "Construction Co",
+    "dtitle": "Modern Building Facades",
+    "ddes": "We design stylish and durable exterior facades for residential, commercial, and industrial buildings.",
     "dsubtitle": "Features & Benefits",
     "dsubdes": [
-      "Study desks & chairs",
-      "Proper lighting",
-      "Storage solutions",
-      "Decorative accents",
-      "Durable furniture"
+      "Modern architectural design",
+      "Durable exterior materials",
+      "Weather-resistant finishes",
+      "Customizable styles",
+      "Timely project delivery"
     ],
-    "location": "Dhanbari, Dhaka, Bangladesh",
-    "type": "Interior",
-    "status": "Ongoing"
+    "location": "Dhaka, Bangladesh",
+    "type": "Exterior",
+    "status": "In Progress",
+    "totalLand": "10 Katha",
+    "totalFlats": "12 Flats",
+    "unitsPerFlat": "2 Units",
+    "flatSize": "1,250 sq.ft",
+    "totalParking": "10 Parking Spaces"
   }
 ]

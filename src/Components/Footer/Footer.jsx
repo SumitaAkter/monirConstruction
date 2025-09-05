@@ -61,12 +61,43 @@ const Footer = () => {
                                 <div className="md:w-1/3">
                                     <h3 className="text-2xl font-semibold mb-3">Useful Links</h3>
                                     <ul>
-                                        <li className="mb-2"><Link to='/' className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Home</Link></li>
-                                        <li className="mb-2"><Link to='/about' className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>About</Link></li>
-                                        <li className="mb-2"><Link to='/services' className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Services</Link></li>
-                                        <li className="mb-2"><Link to='/projects' className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Projects</Link></li>
-                                        <li className="mb-2"><Link to='/contact' className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Contact</Link></li>
-                                        <li className="mb-2"><Link href='' className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Facebook Page</Link></li>
+                                        <li className="mb-2">
+                                            <Link to='/' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li className="mb-2">
+                                            <Link to='/about' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
+                                                About
+                                            </Link>
+                                        </li>
+                                        <li className="mb-2">
+                                            <Link to='/services' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
+                                                Services
+                                            </Link>
+                                        </li>
+                                        <li className="mb-2">
+                                            <Link to='/projects' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
+                                                Projects
+                                            </Link>
+                                        </li>
+                                        <li className="mb-2">
+                                            <Link to='/contact' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
+                                                Contact
+                                            </Link>
+                                        </li>
+                                        <li className="mb-2">
+                                            <a href='https://www.facebook.com/sumita.akter.771/' target='_blank' rel='noreferrer'
+                                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                                className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
+                                                Facebook Page
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
 
@@ -74,11 +105,11 @@ const Footer = () => {
                                 <div className="md:w-1/3">
                                     <h3 className='text-2xl font-semibold mb-3'>Our Services</h3>
                                     <ul>
-                                        <li className='mb-2'><a href="#" className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Residential Construction</a></li>
-                                        <li className='mb-2'><a href="#" className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Commercial Buildings</a></li>
-                                        <li className='mb-2'><a href="#" className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Interior & Exterior Design</a></li>
-                                        <li className='mb-2'><a href="#" className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Project Consultation</a></li>
-                                        <li className='mb-2'><a href="#" className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Company Portfolio</a></li>
+                                        <li className='mb-2'><a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Residential Construction</a></li>
+                                        <li className='mb-2'><a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Commercial Buildings</a></li>
+                                        <li className='mb-2'><a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Interior & Exterior Design</a></li>
+                                        <li className='mb-2'><a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Project Consultation</a></li>
+                                        <li className='mb-2'><a href="#" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>Company Portfolio</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -8,6 +8,12 @@ import bannerImage from "../assets/section-banner.jpg";
 const Service = () => {
   const navigate = useNavigate();
 
+  // Helper function to navigate and scroll to top
+  const navigateTo = (path) => {
+    navigate(path);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {/* Banner Section */}
@@ -40,9 +46,8 @@ const Service = () => {
                 We specialize in delivering both residential and non-residential construction projects with precision and quality. Our expertise also extends to electro-mechanical works, as well as interior design, decoration, and complete renovation services.
               </p>
               <br />
-              
               <button
-                onClick={() => navigate("/extrainfo1")}
+                onClick={() => navigateTo("/extrainfo1")}
                 className="bg-[#ff823a] text-white font-medium px-4 w-28 py-2 text-sm rounded-md hover:bg-black transition"
               >
                 READ MORE
@@ -82,9 +87,8 @@ const Service = () => {
                 Our expertise covers innovative building design, elegant interior solutions, and professional financial guidance to ensure every project is efficient and successful.
               </p>
               <br />
-              
               <button
-                onClick={() => navigate("/extrainfo2")}
+                onClick={() => navigateTo("/extrainfo2")}
                 className="bg-[#ff823a] text-white font-medium px-4 py-2 w-28 text-sm rounded-md hover:bg-black transition"
               >
                 READ MORE
@@ -106,9 +110,8 @@ const Service = () => {
                 We offer a wide range of well-organized construction and building materials, ensuring customers can find the right product at the right time with ease. Alongside sales, we also provide reliable repair and installation services for all building material–related products.
               </p>
               <br />
-              
               <button
-                onClick={() => navigate("/extrainfo3")}
+                onClick={() => navigateTo("/extrainfo3")}
                 className="bg-[#ff823a] text-white font-medium px-4 py-2 w-28 text-sm rounded-md hover:bg-black transition"
               >
                 READ MORE

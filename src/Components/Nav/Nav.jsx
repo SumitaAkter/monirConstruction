@@ -19,7 +19,6 @@ const Nav = () => {
   useEffect(() => {
     updateCounts();
 
-    // Event listeners for dynamic updates
     const handleCartUpdated = () => updateCounts();
     const handleWishlistUpdated = () => updateCounts();
 
@@ -32,7 +31,11 @@ const Nav = () => {
     };
   }, []);
 
-  const handleNavClick = () => setIsMobileMenuOpen(false);
+  // Updated: Close menu and scroll to top
+  const handleNavClick = () => {
+    setIsMobileMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll to top smoothly
+  };
 
   return (
     <div className="w-full fixed top-0 bg-white/90 backdrop-blur-md shadow-md z-50">
@@ -65,6 +68,7 @@ const Nav = () => {
           <Link
             to="/get-quote"
             className="btn px-5 mt-4 py-2 rounded-2xl bg-[#ff823a] text-white font-semibold shadow-sm transition-all duration-300 hover:scale-105 hover:bg-[#e5722c]"
+            onClick={handleNavClick}
           >
             Get Quote
           </Link>
@@ -73,6 +77,7 @@ const Nav = () => {
           <Link
             to="/wishlist"
             className="relative mt-4 px-3 py-2 rounded-full border border-gray-200 hover:bg-[#ff823a] hover:text-white transition-all duration-300"
+            onClick={handleNavClick}
           >
             <i className="bi bi-heart text-xl"></i>
             {wishlistCount > 0 && (
@@ -117,7 +122,7 @@ const Nav = () => {
                 <Link
                   to={item.to}
                   className="nav-link relative uppercase font-bold"
-                  onClick={handleNavClick}
+                  onClick={handleNavClick} // scrolls to top on click
                 >
                   {item.label}
                 </Link>
@@ -132,7 +137,7 @@ const Nav = () => {
               className="btn px-4 py-2 flex items-center justify-center gap-2 rounded-2xl border border-gray-200 text-center transition-all duration-300 hover:bg-[#ff823a] hover:text-white hover:scale-105"
               onClick={handleNavClick}
             >
-              <i className="bi bi-telephone"></i> +880 1700-000000
+              <i className="bi bi-telephone"></i> +88 01814-266412
             </a>
             <Link
               to="/get-quote"

@@ -37,7 +37,7 @@ const FlateDetails = () => {
   if (!flat) {
     return <p className="text-center text-red-500 mt-10">Flat not found!</p>;
   }
-      
+
   return (
     <>
       {/* Banner Section */}
@@ -238,74 +238,79 @@ const FlateDetails = () => {
         </div>
       </div>
 
-                  {/** Recomended Flats */}
-                  <div className="products-container px-[8%] lg:px-[12%] py-[20px] my-1">
-                    <div className="relative">
-                      <div className="row">
-                        <div className="section-title mb-12 product-title text-start">
-                          <h2 className='font-semibold text-3xl'>Recomended Flats</h2>
-                          <p className="text-gray-500">Also get better flat in Our service</p>
-                        </div>
-                      </div>
-                  
-                      <Swiper
-                        slidesPerView={4}
-                        spaceBetween={20}
-                        modules={[Navigation, Autoplay]}
-                        navigation={{ nextEl: ".flats-swiper-next", prevEl: ".flats-swiper-prev" }}
-                        autoplay={{ delay: 1000, disableOnInteraction: false }}
-                        loop={true}
-                        breakpoints={{
-                          1399: { slidesPerView: 4 },
-                          1199: { slidesPerView: 3 },
-                          991: { slidesPerView: 2 },
-                          767: { slidesPerView: 1.5 },
-                          0: { slidesPerView: 1 },
-                        }}
-                        className='mt-4 swiper relative'
-                      >
-                        {flatsData.flats.filter(flat => flat.id >= 1 && flat.id <= 8).map(flat => (
-                          <SwiperSlide key={flat.id}>
-                            <div className="product-item text-center relative">
-                              <Link to={`/flat/${flat.id}`} className='no-underline text-black'>
-                                <div className="product-image w-full relative overflow-hidden rounded-lg">
-                                  <img 
-  src={flat.images[0].replace("./images/", "/images/")} 
-  alt={flat.title} 
-  className="w-full h-[250px] sm:h-[280px] md:h-[300px] lg:h-[320px] xl:h-[350px] object-cover transition-transform duration-300 hover:scale-105"
-/>
+      {/** Recomended Flats */}
+      <div className="products-container px-[8%] lg:px-[12%] py-[20px] my-1">
+  <div className="relative">
+    <div className="row">
+      <div className="section-title mb-12 product-title text-start">
+        <h2 className='font-semibold text-3xl'>Recommended Flats</h2>
+        <p className="text-gray-500">Also get better flat in Our service</p>
+      </div>
+    </div>
 
-                  
-                                  {flat.status && (
-                                    <span className={`badge text-white absolute top-2 left-2 text-xs px-2 py-1 rounded ${flat.status === 'Available' ? 'bg-green-600' : 'bg-red-600'}`}>
-                                      {flat.status}
-                                    </span>
-                                  )}
-                                </div>
-                              </Link>
-                              <div className="product-content pt-2">
-                                <span className='price no-underline'>
-                                  {flat.price}
-                                </span>
-                                <h3 className='title'>
-                                  {flat.title}
-                                </h3>
-                              </div>
-                            </div>
-                          </SwiperSlide>
-                        ))}
-                      </Swiper>
-                  
-                      {/* Navigation buttons */}
-                      <div className="flats-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
-                        &#10094;
-                      </div>
-                      <div className="flats-swiper-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
-                        &#10095;
-                      </div>
-                    </div>
-                  </div>
-      
+    <Swiper
+      slidesPerView={4}
+      spaceBetween={20}
+      modules={[Navigation, Autoplay]}
+      navigation={{ nextEl: ".flats-swiper-next", prevEl: ".flats-swiper-prev" }}
+      autoplay={{ delay: 1000, disableOnInteraction: false }}
+      loop={true}
+      breakpoints={{
+        1399: { slidesPerView: 4 },
+        1199: { slidesPerView: 3 },
+        991: { slidesPerView: 2 },
+        767: { slidesPerView: 1.5 },
+        0: { slidesPerView: 1 },
+      }}
+      className='mt-4 swiper relative'
+    >
+      {flatsData.flats.filter(flat => flat.id >= 1 && flat.id <= 26).map(flat => (
+        <SwiperSlide key={flat.id}>
+          <div
+            className="product-item text-center relative cursor-pointer"
+            onClick={() => {
+              navigate(`/flatDetails/${flat.id}`);
+              setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }, 50); // navigation এর পরে scroll হবে
+            }}
+          >
+            <div className="product-image w-full relative overflow-hidden rounded-lg">
+              <img
+                src={flat.images[0].replace("./images/", "/images/")}
+                alt={flat.title}
+                className="w-full h-[250px] sm:h-[280px] md:h-[300px] lg:h-[320px] xl:h-[350px] object-cover transition-transform duration-300 hover:scale-105"
+              />
+
+              {flat.status && (
+                <span className={`badge text-white absolute top-2 left-2 text-xs px-2 py-1 rounded ${flat.status === 'Available' ? 'bg-green-600' : 'bg-red-600'}`}>
+                  {flat.status}
+                </span>
+              )}
+            </div>
+
+            <div className="product-content pt-2">
+              <span className='price no-underline'>
+                {flat.price}
+              </span>
+              <h3 className='title'>
+                {flat.title}
+              </h3>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+
+    {/* Navigation buttons */}
+    <div className="flats-swiper-prev absolute left-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
+      &#10094;
+    </div>
+    <div className="flats-swiper-next absolute right-0 top-1/2 -translate-y-1/2 cursor-pointer z-10 text-gray-500 hover:text-orange-600 text-3xl font-bold">
+      &#10095;
+    </div>
+  </div>
+</div>
 
     </>
   );

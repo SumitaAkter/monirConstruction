@@ -184,6 +184,15 @@ const ProductDetails = () => {
 
     {activeTab === 'specs' && (
   <div className="text-gray-700 space-y-5">
+    <div>
+      <h2 className="text-2xl font-bold text-gray-800 border-b pb-2">Project Specification:</h2>
+      <p className="font-semibold text-[#ff823a]">Total Land: <span className="text-gray-800">{project.totalLand}</span></p>
+      <p className="font-semibold text-[#ff823a]">Total Flats: <span className="text-gray-800">{project.totalFlats}</span></p>
+      <p className="font-semibold text-[#ff823a]">Total Units Per Flat: <span className="text-gray-800">{project.unitsPerFlat}</span></p>
+      <p className="font-semibold text-[#ff823a]">Flat Size: <span className="text-gray-800">{project.flatSize}</span></p>
+      <p className="font-semibold text-[#ff823a]">Total Parking: <span className="text-gray-800">{project.totalParking}</span></p>
+    </div>
+    <hr />
     {/* Heading */}
     <h3 className="text-2xl font-bold text-gray-800 border-b pb-2">
       Specifications
@@ -307,7 +316,7 @@ const ProductDetails = () => {
                         <SwiperSlide key={p.id}>
                             <Link to={`/product/${p.id}`} className="block rounded-lg overflow-hidden shadow hover:shadow-lg transition">
                                 <div className="relative w-full h-60 md:h-64">
-                                    <img src={p.image} alt={p.productname} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
+                                    <img to={`/project/${project.id}`} src={p.image} alt={p.productname} className="w-full h-full object-cover transition-transform duration-500 hover:scale-105" />
                                     {p.tag && <span className={`absolute top-2 left-2 text-xs px-2 py-1 rounded text-white ${p.tag === 'Sale' ? 'bg-red-600' : 'bg-green-600'}`}>{p.tag}</span>}
                                 </div>
                                 <div className="p-4">
