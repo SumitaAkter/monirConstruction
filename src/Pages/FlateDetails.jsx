@@ -75,9 +75,20 @@ const FlateDetails = () => {
                 <h1 className="text-2xl font-semibold">{flat.title}</h1>
                 <p className="text-gray-800 mt-1">{flat.location}</p>
               </div>
-              <button className="flex items-center gap-1 text-gray-600 hover:text-orange-600">
-                <Share2 size={18} /> Share
-              </button>
+              <button
+  className="flex items-center gap-1 text-gray-600 hover:text-orange-600"
+  onClick={() => {
+    if (navigator.share) {
+      navigator.share({ title: document.title, url: window.location.href });
+    } else {
+      navigator.clipboard.writeText(window.location.href)
+        .then(() => alert("Link copied to clipboard!"))
+        .catch(() => alert("Failed to copy link."));
+    }
+  }}
+>
+  <Share2 size={18} /> Share
+</button>
             </div>
 
             {/* Tags */}
@@ -218,7 +229,8 @@ const FlateDetails = () => {
                   <p className="text-sm text-gray-500">{flatsData.company.name}</p>
                 </div>
               </div>
-              <Share2 size={18} className="text-gray-600 hover:text-orange-600 cursor-pointer" />
+              <Share2 size={18} className="text-gray-600 hover:text-orange-600 cursor-pointer" onClick={() => navigator.share ? navigator.share({ title: 'Flat Details', text: 'Check out this flat!', url: window.location.href }) : alert('Sharing not supported')} />
+
             </div>
 
             {/* View Phone */}

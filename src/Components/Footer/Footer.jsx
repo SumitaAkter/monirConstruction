@@ -1,12 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-import payment1 from '../../assets/payment-1.svg'
-import payment2 from '../../assets/payment-2.svg'
-import payment3 from '../../assets/payment-3.svg'
-import payment4 from '../../assets/payment-4.svg'
-import payment5 from '../../assets/payment-5.svg'
-import payment6 from '../../assets/payment-6.svg'
 
 const Footer = () => {
     const [email, setEmail] = useState('');
@@ -92,7 +86,7 @@ const Footer = () => {
                                             </Link>
                                         </li>
                                         <li className="mb-2">
-                                            <a href='https://www.facebook.com/sumita.akter.771/' target='_blank' rel='noreferrer'
+                                            <a href='https://www.facebook.com/profile.php?id=100076183542840' target='_blank' rel='noreferrer'
                                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                                 className='text-[#333] hover:text-[#ff823a] transition-all duration-300 hover:ml-2 block'>
                                                 Facebook Page
